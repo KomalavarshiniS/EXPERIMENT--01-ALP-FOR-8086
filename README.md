@@ -1,8 +1,9 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
-
+```
+Name : KOMALAVARSHINI.S
+Roll no : 212224230133
+Date of experiment : 03-02-2026
+```
 
 
 
@@ -78,25 +79,129 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
+```
+org 100h
+MOV AL, 25H
+MOV BL, 15H
+ADD AL, BL
+MOV [5000H], AL
+HLT
 
-
-
+```
 ## Output  
- 
+
+ <img width="1920" height="1200" alt="Screenshot (245)" src="https://github.com/user-attachments/assets/68047609-bbc8-4edc-92b1-ce581ada4cc9" />
+
+
 ## Subtraction   of 8 bit numbers  ALP 
- 
+```
+org 100h
+MOV AL, 40H
+MOV BL, 18H
+SUB AL, BL
+MOV [5001H], AL
+HLT
+```
 ## Output  
+
+<img width="1920" height="1200" alt="Screenshot (246)" src="https://github.com/user-attachments/assets/8d6f5c10-11c9-4226-afcf-c051d427922a" />
+
+
 ## Multiplication alp 
+```
+org 100h
+MOV AL, 06H
+MOV BL, 04H
+MUL BL
+MOV [5002H], AX
+HLT
+```
+
  ## Output  
+<img width="1920" height="1200" alt="Screenshot (247)" src="https://github.com/user-attachments/assets/627c6af9-4a7c-497a-8ee5-da8b3103e946" />
 
 
 ## Division alp 
+```
+org 100h
+MOV AX, 0024H
+MOV BL, 06H
+DIV BL
+MOV [5004H], AL
+MOV [5005H], AH
+HLT
+
+```
 
 ## Output  
+<img width="1920" height="1200" alt="Screenshot (248)" src="https://github.com/user-attachments/assets/448c129d-d563-4db9-9d48-e2de9883625a" />
+
+## AND ap
+```
+org 100h
+
+MOV AL, 5AH
+MOV BL, 3CH
+AND AL, BL
+MOV [5000H], AL
+
+HLT
+
+
+```
+
+## Output
+<img width="1920" height="1200" alt="Screenshot (252)" src="https://github.com/user-attachments/assets/49b906d4-fe1f-464a-8634-0d68a7cb153b" />
+
+## OR ap
+```
+org 100h
+MOV AL, 5AH
+MOV BL, 3CH
+OR AL, BL
+MOV [5001H], AH
+HLT
+
+
+```
+
+## Output
+
+<img width="1920" height="1200" alt="Screenshot (249)" src="https://github.com/user-attachments/assets/05211a18-50b5-48ac-bf1b-11fbe16cd13a" />
+
+## XOR ap
+```
+org 100h
+MOV AL, 5AH
+MOV BL, 3CH
+XOR AL, BL
+MOV [5002H], AL
+HLT
+
+
+```
+
+## Output
+
+<img width="1920" height="1200" alt="Screenshot (250)" src="https://github.com/user-attachments/assets/02675f1d-4db7-43e4-a944-8169c3f0250a" />
+
+## NOT ap
+```
+org 100h
+MOV AL, 5AH
+NOT AL
+MOV [5003H], AL
+HLT
+```
+
+## Output
+
+<img width="1920" height="1200" alt="Screenshot (251)" src="https://github.com/user-attachments/assets/6b0e1641-7d2d-48a8-96d1-784cf0ae12c6" />
+
 
 
 ## Result :
- 
+Thus the execution for ALP on fundamental arithmetic and logical operations in done on 8086 microprocessor.
 
 
 
